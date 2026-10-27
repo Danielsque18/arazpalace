@@ -54,7 +54,10 @@
   function tick() {
     var d = tver(), m = d.getHours() * 60 + d.getMinutes(), open = m >= 660;
     var el = $('#open'); el.classList.toggle('is-open', open); el.textContent = open ? 'Сейчас открыто, до 00:00' : 'Откроемся сегодня в 11:00';
-    var ny = new Date(d.getFullYear() + (d.getMonth() === 0 && d.getDate() <= 1 ? 0 : 1), 0, 1), days = Math.ceil((ny - d) / 864e5);
+    /* новогодний блок живёт с 1 октября по 31 декабря, в остальное время скрыт */
+    $('#ny').hidden = d.getMonth() < 9;
+    var ny = new Date(d.getFullYear() + 1, 0, 1), days = Math.ceil((ny - d) / 864e5);
+    $('#nyYear').textContent = ny.getFullYear();
     var w = days % 10 === 1 && days % 100 !== 11 ? 'день' : days % 10 >= 2 && days % 10 <= 4 && (days % 100 < 10 || days % 100 >= 20) ? 'дня' : 'дней';
     $('#nyDays').textContent = days + ' ' + w;
   }
