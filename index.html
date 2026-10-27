@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Араз Палас — ресторан, банкетные залы и отель в Твери</title>
+<meta name="description" content="Ресторан «Араз Палас» в Твери: банкетные залы до 200 гостей, круглогодичная веранда, домики, отель и сауна. Свадьбы, юбилеи, корпоративы. Ул. Марины Расковой, 12, ежедневно 11:00–00:00.">
+<meta name="theme-color" content="#110d09">
+<meta property="og:title" content="Араз Палас — ресторан, банкетные залы и отель в Твери">
+<meta property="og:description" content="Залы до 200 гостей, веранда, домики, отель и сауна. Бронирование новогодних корпоративов открыто.">
+<meta property="og:image" content="https://danielsque18.github.io/arazpalace/img/hall-wide.webp">
+<link rel="icon" href="img/logo.webp">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=20261027e">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Араз Палас","address":{"@type":"PostalAddress","streetAddress":"ул. Марины Расковой, 12","addressLocality":"Тверь","addressCountry":"RU"},"telephone":"+7 920 164-02-02","openingHours":"Mo-Su 11:00-24:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"869"},"sameAs":["https://vk.com/arazpalace"]}</script>
+</head>
+<body>
+
+<header class="top" id="top">
+  <a href="#hero" class="brand" aria-label="Араз Палас — наверх"><img src="img/logo.webp" alt="" width="44" height="44"><span><b>Араз Палас</b><small>ресторан · отель · Тверь</small></span></a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#halls">Залы</a><a href="#menu">Меню</a><a href="#events">Праздники</a><a href="#hotel">Отель и сауна</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a href="tel:+79201640202" class="btn btn-gold top-cta">+7 (920) 164-02-02</a>
+  <button class="burger" type="button" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main>
+
+<!-- ПЕРВЫЙ ЭКРАН -->
+<section class="hero-wrap" id="hero">
+  <video class="bgv" src="video/champagne-pour.mp4" poster="img/champagne-pour-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="hero">
+  <div class="hero-text">
+    <p class="over"><span></span>Ресторан · банкетные залы · отель</p>
+    <h1>Араз Палас<em>место для вашего праздника</em></h1>
+    <p class="lead">Свадьбы, юбилеи, выпускные и корпоративы в Твери. Залы до 200 гостей, круглогодичная веранда, домики, своя кухня — а для гостей издалека отель и сауна прямо здесь.</p>
+    <div class="hero-btns">
+      <a href="tel:+79201640202" class="btn btn-gold">Забронировать дату</a>
+      <a href="#halls" class="btn btn-line">Подобрать зал</a>
+    </div>
+    <ul class="hero-facts">
+      <li><b>4,8</b><span>869 оценок на Яндекс Картах</span></li>
+      <li><b>до 200</b><span>гостей в основном зале</span></li>
+      <li><b>11–00</b><span>ежедневно</span></li>
+    </ul>
+  </div>
+  <div class="hero-pics">
+    <figure class="arch arch-big"><img src="img/hall-aisle.webp" alt="Банкетный зал, украшенный к свадьбе" width="854" height="1280" fetchpriority="high"></figure>
+    <figure class="arch arch-small"><img src="img/veranda-night.webp" alt="Веранда с гирляндами вечером" width="964" height="1280"></figure>
+    <div class="hero-badge"><b>Отель</b><span>и сауна<br>в одном здании</span></div>
+  </div>
+  </div>
+</section>
+
+<!-- НОВЫЙ ГОД -->
+<section class="ny">
+  <video class="bgv" src="video/champagne-toast.mp4" poster="img/champagne-toast-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+  <div class="ny-in">
+    <p class="over over-light"><span></span>Новый год 2027</p>
+    <h2>Бронирование новогодних корпоративов открыто</h2>
+    <p>До Нового года <b id="nyDays">—</b>. Позвоните администратору — подберём зал под вашу компанию и расскажем о программе вечера.</p>
+    <a href="tel:+79201640202" class="btn btn-gold">Выбрать дату</a>
+  </div>
+</section>
+
+<!-- ЗАЛЫ + ПОДБОР -->
+<section class="halls sec" id="halls">
+  <p class="over"><span></span>Залы</p>
+  <h2>Сколько будет <em>гостей?</em></h2>
+  <div class="picker">
+    <label for="guests">Гостей: <b id="gNum">40</b></label>
+    <input type="range" id="guests" min="2" max="200" value="40" step="1">
+    <p class="pick-res" id="gRes" aria-live="polite"></p>
+  </div>
+  <div class="hall-grid">
+    <article class="hall" data-max="200">
+      <figure class="arch"><img src="img/hall-banquet.webp" alt="Основной зал, банкет" width="1280" height="854" loading="lazy"></figure>
+      <div class="hall-t"><p class="cap">до 200 гостей</p><h3>Основной зал</h3><p>Для свадеб и больших торжеств: просторно, светло, есть место для танцев и шоу-программы.</p></div>
+    </article>
+    <article class="hall hall-blue" data-max="80">
+      <div class="arch arch-color"><span>Синий зал</span></div>
+      <div class="hall-t"><p class="cap">до 80 гостей</p><h3>Синий зал</h3><p>Для юбилеев и семейных праздников.</p><blockquote>«Справляла Юбилей 5 сентября в Синем зале.Все остались в полном восторге.Ребята -официанты на высоте!Кухня отличная!Зал,шикарный!»<cite>Яндекс Карты</cite></blockquote></div>
+    </article>
+    <article class="hall" data-max="40">
+      <figure class="arch"><img src="img/veranda-in.webp" alt="Веранда ресторана" width="808" height="538" loading="lazy"></figure>
+      <div class="hall-t"><p class="cap">до 40 гостей · круглый год</p><h3>Веранда</h3><p>Тёплая круглогодичная веранда — для дней рождения, встреч и небольших банкетов.</p></div>
+    </article>
+    <article class="hall hall-cream" data-max="12">
+      <div class="arch arch-color arch-cream"><span>Домики</span></div>
+      <div class="hall-t"><p class="cap">до 12 гостей</p><h3>Домики</h3><p>Отдельные домики для компании — ужин без посторонних.</p><blockquote>«Вкусная еда, закрытые изолированные домики, приветливый персонал, живая музыка. Рекомендую.»<cite>Яндекс Карты</cite></blockquote></div>
+    </article>
+  </div>
+</section>
+
+<!-- ПРАЗДНИКИ -->
+<section class="events sec" id="events">
+  <div class="ev-head">
+    <div><p class="over"><span></span>Праздники</p><h2>Отмечаем <em>всё, что важно</em></h2></div>
+    <ul class="chips"><li>Свадьбы</li><li>Юбилеи</li><li>Выпускные</li><li>Корпоративы</li><li>Дни рождения</li></ul>
+  </div>
+  <div class="ev-grid">
+    <figure class="g g1"><img src="img/hall-wide.webp" alt="Зал, украшенный к свадьбе" width="1280" height="854" loading="lazy"></figure>
+    <figure class="g g2"><img src="img/wedding-fire.webp" alt="Первый танец молодожёнов" width="961" height="1280" loading="lazy"></figure>
+    <figure class="g g3"><img src="img/arch.webp" alt="Свадебная арка из цветов" width="1076" height="1280" loading="lazy"></figure>
+    <figure class="g g4"><img src="img/buffet.webp" alt="Фуршетный стол" width="1280" height="853" loading="lazy"></figure>
+    <figure class="g g5"><img src="img/hall-tables.webp" alt="Сервированные столы" width="747" height="1280" loading="lazy"></figure>
+  </div>
+  <blockquote class="big-quote">«Отмечали позавчера тут выпускной . красиво, чисто, все очень вкусно. Блюда подаются все во время. Официанты внимательные. Все красиво украшено. Подходит для, свадьбы, выпускного, юбилея. 🎉»<cite>Анастасия Коблицкая · Яндекс Карты</cite></blockquote>
+</section>
+
+<!-- КУХНЯ -->
+<section class="kitchen" id="kitchen">
+  <video class="bgv bgv-top" src="video/shashlik.mp4" poster="img/shashlik-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+  <div class="sec">
+    <div class="k-head">
+      <div><p class="over over-light"><span></span>Кухня</p><h2>Кухни мира <em>с восточным колоритом</em></h2></div>
+      <p>От классических европейских блюд до национальной кухни. Шашлык, салаты, закуски — в зале и с доставкой. В ресторане живая музыка.</p>
+    </div>
+    <div class="k-grid">
+      <figure><img src="img/dish-plov.webp" alt="Плов" width="1280" height="853" loading="lazy"></figure>
+      <figure><img src="img/dish-meat.webp" alt="Мясные блюда" width="960" height="640" loading="lazy"></figure>
+      <figure><img src="img/dish-khinkali.webp" alt="Хинкали" width="960" height="1280" loading="lazy"></figure>
+      <figure><img src="img/dish-salad.webp" alt="Салат с гранатом" width="960" height="1280" loading="lazy"></figure>
+    </div>
+    <div class="k-row">
+      <div class="gift"><img src="img/show.webp" alt="Шоу-программа в ресторане" width="1280" height="854" loading="lazy"><div><p class="cap">Подарок от заведения</p><h3>Восточный танец</h3><p>Утончённый и завораживающий номер — подарок ресторана гостям.</p></div></div>
+      <blockquote class="k-quote">«Всё очень вкусно! Шашлык, салаты, закуски. Заказывали доставку из Араз Палас уже несколько раз. Качествено, вовремя, аккуратно и красиво упаковано.»<cite>Яндекс Карты</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- МЕНЮ -->
+<section class="menu sec" id="menu">
+  <div class="mn-head">
+    <div><p class="over"><span></span>Меню</p><h2>Что <em>попробовать</em></h2></div>
+    <p class="mn-note">Цены из меню доставки «Араз Палас» в Яндекс Еде. В зале блюда и цены могут немного отличаться — уточняйте у официанта.</p>
+  </div>
+  <div class="mn-tabs" id="mnTabs" role="tablist" aria-label="Разделы меню"></div>
+  <div class="mn-grid" id="mnGrid"></div>
+  <p class="mn-more"><a class="link" href="https://yandex.ru/maps/org/araz_palas/80278213407/menu/" target="_blank" rel="noopener">Всё меню — 188 позиций на Яндекс Картах →</a></p>
+</section>
+
+<!-- ОТЕЛЬ И САУНА -->
+<section class="hotel sec" id="hotel">
+  <figure class="arch hotel-pic"><img src="img/room.webp" alt="Номер отеля" width="1280" height="853" loading="lazy"></figure>
+  <div class="hotel-t">
+    <p class="over"><span></span>Отель и сауна</p>
+    <h2>Гостям издалека <em>не нужно искать ночлег</em></h2>
+    <ul class="ticks">
+      <li>Номера в том же здании, что и ресторан</li>
+      <li>В номерах холодильник, чайник, чай и кофе</li>
+      <li>Сауна с бассейном и парной</li>
+      <li>Парковка у здания</li>
+    </ul>
+    <blockquote>«Приезжаем в Тверь погулять отдохнуть, останавливаемся в "Араз Палас" не первый раз, Замечательное место для отдыха! Номера чистые, есть холодильник, чайник, все принадлежности,водичка, чай, кофе!»<cite>Ольга Л. · Яндекс Карты</cite></blockquote>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="reviews sec" id="reviews">
+  <div class="rv-head"><div><p class="over"><span></span>Отзывы</p><h2><em>4,8</em> на Яндекс Картах</h2></div><a class="link" href="https://yandex.ru/maps/org/araz_palas/80278213407/reviews/" target="_blank" rel="noopener">Все 410 отзывов →</a></div>
+  <div class="rv-grid" id="rvGrid"></div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts" id="contacts">
+  <video class="bgv" src="video/champagne-glasses.mp4" poster="img/champagne-glasses-poster.jpg" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+  <div class="sec c-in">
+    <div class="c-text">
+      <p class="over over-light"><span></span>Бронирование</p>
+      <h2>Позвоните — <em>подберём зал и дату</em></h2>
+      <div class="c-btns"><a href="tel:+79201640202" class="btn btn-gold">+7 (920) 164-02-02</a><a href="https://vk.me/arazpalace" class="btn btn-line btn-line-light" target="_blank" rel="noopener">Написать во ВКонтакте</a></div>
+      <dl class="c-list">
+        <div><dt>Адрес</dt><dd>Тверь, ул. Марины Расковой, 12<br>(мкр. Южный)</dd></div>
+        <div><dt>Режим</dt><dd>Ежедневно 11:00–00:00<br><em class="open" id="open"></em></dd></div>
+        <div><dt>Телефоны</dt><dd><a href="tel:+79201640202">+7 (920) 164-02-02</a><br><a href="tel:+74822368358">36-83-58</a></dd></div>
+      </dl>
+    </div>
+    <a class="map" href="https://yandex.ru/maps/org/araz_palas/80278213407/" target="_blank" rel="noopener" aria-label="Открыть на Яндекс Картах"><img src="img/map.webp" alt="Карта: Тверь, ул. Марины Расковой, 12" width="650" height="450" loading="lazy"><span>Построить маршрут →</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Араз Палас · ресторан, банкетные залы и отель · Тверь</p>
+  <p class="made">Демо-версия · <a href="https://danielsque18.github.io/portfolio/" target="_blank" rel="noopener">Сайт — Даниил Демьянов</a></p>
+</footer>
+
+<script src="menu.js?v=20261027a"></script>
+<script src="script.js?v=20261027b"></script>
+</body>
+</html>
